@@ -13790,3 +13790,52 @@ File Path                                           PID  Runtime      # DAGs    
 /opt/airflow/dags/scheduler_dag_with_cron_exp.py    729  52.53s            1           0  0.09s           2025-01-01T09:39:13                      12
 /opt/airflow/dags/bash_operator_dag.py                                     1           0  0.09s           2025-01-01T09:39:14                      12
 ================================================================================
+[2025-01-01T09:49:03.580+0000] {manager.py:821} INFO - Searching for files in /opt/airflow/dags
+[2025-01-01T09:50:16.535+0000] {manager.py:824} INFO - There are 6 files in /opt/airflow/dags
+[2025-01-01T09:50:17.555+0000] {manager.py:1366} ERROR - Processor for /opt/airflow/dags/postgres_operator_dag.py with PID 728 started at 2025-01-01T09:39:38.500562+00:00 has timed out, killing it.
+[2025-01-01T09:50:17.567+0000] {manager.py:1366} ERROR - Processor for /opt/airflow/dags/scheduler_dag_with_cron_exp.py with PID 729 started at 2025-01-01T09:39:46.173825+00:00 has timed out, killing it.
+[2025-01-01T09:50:17.623+0000] {manager.py:997} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                           PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run               Last # of DB Queries
+------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------  ----------------------
+/opt/airflow/dags/postgres_operator_dag.py                                 0           1  639.05s         2025-01-01T09:50:17                       0
+/opt/airflow/dags/scheduler_dag_with_cron_exp.py                           0           1  631.38s         2025-01-01T09:50:17                       0
+/opt/airflow/dags/data_sharing_via_xcoms.py         731  0.01s             1           0  0.12s           2025-01-01T09:39:14                      12
+/opt/airflow/dags/task_flow_api_dag.py              730  0.04s             1           0  0.11s           2025-01-01T09:39:13                      12
+/opt/airflow/dags/python_operator_dag.py                                   1           0  0.10s           2025-01-01T09:39:14                      12
+/opt/airflow/dags/bash_operator_dag.py                                     1           0  0.09s           2025-01-01T09:39:14                      12
+================================================================================
+[2025-01-01T09:50:47.661+0000] {manager.py:997} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                           PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run               Last # of DB Queries
+------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------  ----------------------
+/opt/airflow/dags/postgres_operator_dag.py                                 0           1  639.05s         2025-01-01T09:50:17                       0
+/opt/airflow/dags/scheduler_dag_with_cron_exp.py                           0           1  631.38s         2025-01-01T09:50:17                       0
+/opt/airflow/dags/data_sharing_via_xcoms.py         731  30.05s            1           0  0.12s           2025-01-01T09:39:14                      12
+/opt/airflow/dags/task_flow_api_dag.py              730  30.08s            1           0  0.11s           2025-01-01T09:39:13                      12
+/opt/airflow/dags/python_operator_dag.py                                   1           0  0.10s           2025-01-01T09:39:14                      12
+/opt/airflow/dags/bash_operator_dag.py                                     1           0  0.09s           2025-01-01T09:39:14                      12
+================================================================================
+[2025-01-01T09:50:55.714+0000] {manager.py:1146} ERROR - Processor for /opt/airflow/dags/task_flow_api_dag.py exited with return code 1.
+[2025-01-01T09:50:55.715+0000] {manager.py:1146} ERROR - Processor for /opt/airflow/dags/data_sharing_via_xcoms.py exited with return code 1.
+[2025-01-01T09:51:02.594+0000] {manager.py:1146} ERROR - Processor for /opt/airflow/dags/python_operator_dag.py exited with return code 1.
+[2025-01-01T09:51:02.811+0000] {manager.py:1146} ERROR - Processor for /opt/airflow/dags/bash_operator_dag.py exited with return code 1.
+[2025-01-01T09:51:03.750+0000] {manager.py:1146} ERROR - Processor for /opt/airflow/dags/scheduler_dag_with_cron_exp.py exited with return code 1.
+[2025-01-01T09:51:03.793+0000] {manager.py:1146} ERROR - Processor for /opt/airflow/dags/postgres_operator_dag.py exited with return code 1.
+[2025-01-01T09:51:17.978+0000] {manager.py:997} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                         PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run               Last # of DB Queries
+------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------  ----------------------
+/opt/airflow/dags/task_flow_api_dag.py                                     0          -1  38.14s          2025-01-01T09:50:55                       0
+/opt/airflow/dags/data_sharing_via_xcoms.py                                0          -1  38.10s          2025-01-01T09:50:55                       0
+/opt/airflow/dags/bash_operator_dag.py                                     0          -1  6.88s           2025-01-01T09:51:02                       0
+/opt/airflow/dags/python_operator_dag.py                                   0          -1  6.87s           2025-01-01T09:51:02                       0
+/opt/airflow/dags/postgres_operator_dag.py                                 0          -1  1.19s           2025-01-01T09:51:03                       0
+/opt/airflow/dags/scheduler_dag_with_cron_exp.py                           0          -1  0.92s           2025-01-01T09:51:03                       0
+================================================================================
