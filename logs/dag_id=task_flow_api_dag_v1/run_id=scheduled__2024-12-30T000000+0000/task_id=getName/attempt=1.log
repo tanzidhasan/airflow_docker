@@ -1,0 +1,19 @@
+[2024-12-31T09:02:57.959+0000] {local_task_job_runner.py:123} INFO - ::group::Pre task execution logs
+[2024-12-31T09:02:57.973+0000] {taskinstance.py:2613} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: task_flow_api_dag_v1.getName scheduled__2024-12-30T00:00:00+00:00 [queued]>
+[2024-12-31T09:02:57.978+0000] {taskinstance.py:2613} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: task_flow_api_dag_v1.getName scheduled__2024-12-30T00:00:00+00:00 [queued]>
+[2024-12-31T09:02:57.979+0000] {taskinstance.py:2866} INFO - Starting attempt 1 of 1
+[2024-12-31T09:02:57.988+0000] {taskinstance.py:2889} INFO - Executing <Task(_PythonDecoratedOperator): getName> on 2024-12-30 00:00:00+00:00
+[2024-12-31T09:02:57.994+0000] {warnings.py:112} WARNING - /home/***/.local/lib/python3.12/site-packages/***/task/task_runner/standard_task_runner.py:70: DeprecationWarning: This process (pid=471) is multi-threaded, use of fork() may lead to deadlocks in the child.
+  pid = os.fork()
+
+[2024-12-31T09:02:57.996+0000] {standard_task_runner.py:104} INFO - Running: ['***', 'tasks', 'run', 'task_flow_api_dag_v1', 'getName', 'scheduled__2024-12-30T00:00:00+00:00', '--job-id', '45', '--raw', '--subdir', 'DAGS_FOLDER/task_flow_api_dag.py', '--cfg-path', '/tmp/tmpjudxjltn']
+[2024-12-31T09:02:57.997+0000] {standard_task_runner.py:72} INFO - Started process 474 to run task
+[2024-12-31T09:02:57.997+0000] {standard_task_runner.py:105} INFO - Job 45: Subtask getName
+[2024-12-31T09:02:58.036+0000] {task_command.py:467} INFO - Running <TaskInstance: task_flow_api_dag_v1.getName scheduled__2024-12-30T00:00:00+00:00 [running]> on host b0ef9544b3b5
+[2024-12-31T09:02:58.109+0000] {taskinstance.py:3132} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='tanzid' AIRFLOW_CTX_DAG_ID='task_flow_api_dag_v1' AIRFLOW_CTX_TASK_ID='getName' AIRFLOW_CTX_EXECUTION_DATE='2024-12-30T00:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2024-12-30T00:00:00+00:00'
+[2024-12-31T09:02:58.110+0000] {taskinstance.py:731} INFO - ::endgroup::
+[2024-12-31T09:02:58.113+0000] {python.py:240} INFO - Done. Returned value was: {'first_name': 'Tanzid', 'last_name': 'Hasan'}
+[2024-12-31T09:02:58.135+0000] {taskinstance.py:340} INFO - ::group::Post task execution logs
+[2024-12-31T09:02:58.136+0000] {taskinstance.py:352} INFO - Marking task as SUCCESS. dag_id=task_flow_api_dag_v1, task_id=getName, run_id=scheduled__2024-12-30T00:00:00+00:00, execution_date=20241230T000000, start_date=20241231T090257, end_date=20241231T090258
+[2024-12-31T09:02:58.172+0000] {local_task_job_runner.py:266} INFO - Task exited with return code 0
+[2024-12-31T09:02:58.178+0000] {local_task_job_runner.py:245} INFO - ::endgroup::
