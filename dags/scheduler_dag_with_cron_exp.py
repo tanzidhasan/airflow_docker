@@ -12,11 +12,11 @@ default_args = {
 
 
 with DAG(
-    dag_id='scheduler_dag_with_cron_exp_v3',
+    dag_id='scheduler_dag_with_cron_exp_v5',
     default_args=default_args,
     description="This is scheduler dag with cron expression",
     start_date=datetime(2024, 12, 25),
-    schedule_interval='22 09 * * MON,TUE'
+    schedule_interval='22 09 * * SUN,MON'
 
 ) as dag:
     task1 = BashOperator(
